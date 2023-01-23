@@ -23,21 +23,26 @@ class _LoginState extends State<Login> {
             shrinkWrap: true,
             children: [
               Center(child: Image(image: AssetImage('images/kseb.jpg'))),
-              SizedBox(height: 20),
-              TextFormField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5)),
-                  hintText: 'User Name',
+              Padding(
+                padding: const EdgeInsets.only(right: 5,left: 5,top: 50),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5)),
+                    hintText: 'User Name',
+                  ),
                 ),
               ),
-              SizedBox(height: 20),
-              TextFormField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5)),
-                  hintText: 'Password',
+              Padding(
+                padding: const EdgeInsets.only(right: 5,left: 5,top: 30),
+                child: TextFormField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(5)),
+                    hintText: 'Password',
+                    suffixIcon: Icon(Icons.remove_red_eye_outlined,color: Colors.black54,)
+                  ),
                 ),
               ),
               SizedBox(height: 50),

@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+
 import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 import 'login_page.dart';
+
 import 'register_page.dart';
+
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class welcome extends StatefulWidget {
   const welcome({Key? key}) : super(key: key);
@@ -26,17 +30,21 @@ class _welcomeState extends State<welcome> {
               Image(image: AssetImage('images/govt logo.png')),
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 30),
-                  child: GradientText('WELCOME',
-                      style: TextStyle(
-                        fontFamily: 'ArchivoBlack',
-                        fontSize: 30,
+                  padding: const EdgeInsets.only(top: 50),
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      WavyAnimatedText(
+                        'WELCOME',
+                        textStyle: TextStyle(
+                            fontSize: 30,
+                            fontFamily: 'ArchivoBlack',
+                            fontWeight: FontWeight.bold,
+                            color: Colors.deepPurple[900]),
                       ),
-                      colors: [
-                        Colors.blueAccent,
-                        Colors.black,
-                        Colors.blueAccent,
-                      ]),
+                    ],
+                    repeatForever: true,
+                    pause: Duration(microseconds: 10),
+                  ),
                 ),
               ),
               SizedBox(

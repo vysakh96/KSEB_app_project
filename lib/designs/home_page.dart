@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'bill_page.dart';
 
+import 'chat_page.dart';
+
+import 'complaint_page.dart';
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -101,7 +105,13 @@ class _HomeState extends State<Home> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Complaints(),
+                          ));
+                    },
                     child: Text(
                       'COMPLAINTS',
                       style: TextStyle(
@@ -125,7 +135,13 @@ class _HomeState extends State<Home> {
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Chat(),
+                          ));
+                    },
                     child: Text(
                       'CHAT ME',
                       style: TextStyle(
