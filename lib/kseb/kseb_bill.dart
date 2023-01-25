@@ -38,33 +38,6 @@ class _Kseb_BillState extends State<Kseb_Bill> {
                 child: Row(
                   children: [
                     Text(
-                      'Bill Number',
-                      style: TextStyle(color: Colors.black, fontSize: 18),
-                    ),
-                    Text(
-                      '*',
-                      style: TextStyle(
-                          color: Colors.red, fontWeight: FontWeight.bold),
-                    )
-                  ],
-                ),
-              ),
-              TextFormField(
-                decoration: InputDecoration(
-                  fillColor: Colors.white,
-                  filled: true,
-                  enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5),
-                      borderSide: BorderSide(color: Colors.orange)),
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: 8, horizontal: 5),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 5, right: 5, top: 30),
-                child: Row(
-                  children: [
-                    Text(
                       'Consumer Number',
                       style: TextStyle(color: Colors.black, fontSize: 18),
                     ),
@@ -89,77 +62,72 @@ class _Kseb_BillState extends State<Kseb_Bill> {
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 30),
-                child: Row(
-                  children: [
-                    Text(
-                      'Owner Name',
-                      style: TextStyle(color: Colors.black, fontSize: 18),
-                    ),
-                    Text(
-                      '*',
-                      style: TextStyle(
-                          color: Colors.red, fontWeight: FontWeight.bold),
-                    )
-                  ],
+                child: Text(
+                  'Bill Number',
+                  style: TextStyle(color: Colors.black, fontSize: 18),
                 ),
               ),
-              TextFormField(
-                decoration: InputDecoration(
-                  fillColor: Colors.white,
-                  filled: true,
-                  enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5),
-                      borderSide: BorderSide(color: Colors.orange)),
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: 8, horizontal: 5),
-                ),
+              Container(
+                height: 50,
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.white),
+                child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Text(
+                        '1234',
+                        style: TextStyle(fontSize: 17, color: Colors.black),
+                      ),
+                    )),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 30),
-                child: Row(
-                  children: [
-                    Text(
-                      'Amount',
-                      style: TextStyle(color: Colors.black, fontSize: 18),
-                    ),
-                    Text(
-                      '*',
-                      style: TextStyle(
-                          color: Colors.red, fontWeight: FontWeight.bold),
-                    )
-                  ],
+                child: Text(
+                  'Customer Name',
+                  style: TextStyle(color: Colors.black, fontSize: 18),
                 ),
               ),
-              TextFormField(
-                decoration: InputDecoration(
-                  fillColor: Colors.white,
-                  filled: true,
-                  enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5),
-                      borderSide: BorderSide(color: Colors.orange)),
-                  contentPadding:
-                      EdgeInsets.symmetric(vertical: 8, horizontal: 5),
-                ),
+              Container(
+                height: 50,
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.white),
+                child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Text(
+                        'Rohan',
+                        style: TextStyle(fontSize: 17, color: Colors.black),
+                      ),
+                    )),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 50, right: 100, left: 100),
-                child: Container(
-                  height: 40,
-                  width: double.maxFinite,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [Colors.grey, Colors.green]),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: TextButton(
-                    onPressed: () {
-                    },
-                    child: Text('SUBMIT',
-                        style: TextStyle(fontSize: 20, color: Colors.white)),
-                  ),
+                padding: const EdgeInsets.only(top: 30),
+                child: Text(
+                  'Amount',
+                  style: TextStyle(color: Colors.black, fontSize: 18),
                 ),
+              ),
+              Container(
+                height: 50,
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.white),
+                child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Text(
+                        '1000',
+                        style: TextStyle(fontSize: 17, color: Colors.black),
+                      ),
+                    )),
               ),
             ],
           ),

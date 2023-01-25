@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'home_page.dart';
 
+import 'payment_page.dart';
+
 class MyBill extends StatefulWidget {
   const MyBill({Key? key}) : super(key: key);
 
@@ -53,7 +55,13 @@ class _MyBillState extends State<MyBill> {
                 width: double.maxFinite,
                 color: Colors.blue[700],
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Payment(),
+                        ));
+                  },
                   child: Text(
                     'Pay Now',
                     style: TextStyle(
