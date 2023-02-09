@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kseb_project/user/profile_page.dart';
 
 import 'bill_page.dart';
 
@@ -38,6 +39,15 @@ class _HomeState extends State<Home> {
           child: ListView(
             shrinkWrap: true,
             children: [
+              Align(alignment: Alignment.topRight,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Profile(),));
+                      },
+                        child: Icon(Icons.note_alt_outlined,color: Colors.white,size: 30,)),
+                  )),
               Padding(
                 padding: const EdgeInsets.only(left: 5, right: 175, top: 450),
                 child: Container(

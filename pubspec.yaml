@@ -39,6 +39,7 @@ dependencies:
   google_fonts: ^3.0.1
   simple_gradient_text: ^1.2.4
   animated_text_kit: ^4.2.2
+  proste_bezier_curve: ^2.0.2
 
 dev_dependencies:
   flutter_test:
